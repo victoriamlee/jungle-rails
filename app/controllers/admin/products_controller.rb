@@ -4,7 +4,6 @@ class Admin::ProductsController < ApplicationController
 
   def index
     @products = Product.order(id: :desc).all
-    puts ENV['HTTP_BASIC_AUTH_PASSWORD']
   end
 
   def new

@@ -18,8 +18,8 @@
         </tr>
       </thead>
       <tbody>
-      <% @order_items.each_with_index do |item, index| %>
-        <%= render 'item', product: item, quantity: @order.line_items[index].quantity.to_i %>
+      <% @order.line_items.each do |item| %>
+        <%= render 'item', product: item.product, quantity: item.quantity.to_i %>
       <% end %>
 
       </tbody>
