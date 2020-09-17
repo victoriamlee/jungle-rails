@@ -6,11 +6,24 @@
     <td>
       <%= @product_count %>
     </td>
+    <td>
+      <% Product.all.each do |category| %>
+        See all <%= link_to category.name, category %> products
+        <br>
+      <% end %>
+    </td>
   </tr>
     <tr>
     <th>Number of <%= link_to 'Categories', admin_products_path %></th>
     <td>
       <%= @category_count %>
     </td>
+    <td>
+      <% Category.all.each do |category| %>
+        See all <%= link_to category.name, category %> products
+        <br>
+      <% end %>
+    </td>
   </tr>
 </table>
+

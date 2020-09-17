@@ -5,7 +5,7 @@
   </header>
 
   <% if enhanced_cart.product.count == 0 %>
-  <div id="empty-cart">
+  <div class="alert" id="empty-cart">
     <h3>
       Your cart is empty, please continue shopping <%= link_to 'here', :root %>
     </h3>
