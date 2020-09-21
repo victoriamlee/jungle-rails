@@ -63,5 +63,39 @@ RSpec.describe User, type: :model do
       expect(subject).to_not be_valid
       expect(subject.errors.full_messages).to include "Password is too short (minimum is 3 characters)"
     end
+    it "should create user if password is exact length" do
+      subject.password = 'noo'
+      subject.password_confirmation = 'noo'
+      expect(subject).to be_valid
+      expect(subject.errors.full_messages).to be_empty
+    end
+  end
+
+  describe '.authenticate_with_credentials' do
+    it 'logs in if credentials are correct' do
+      subject.save!
+      user = User.authenticate_with_credentials(subject.email, subject.password)
+      expect(user).to eq subject
+    end
+    it "doesn't log in if email is incorrect" do
+      subject.save!
+      user = User.authenticate_with_credentials("idk@email.com", subject.password)
+      expect(user).to eq nil
+    end
+    it "doesn't log in if password is incorrect" do
+      subject.save!
+      user = User.authenticate_with_credentials(subject.email, "1234")
+      expect(user).to eq nil
+    end
+    it "logs in if emails have spaces still" do
+      subject.save!
+      user = User.authenticate_with_credentials("   " + subject.email + "   ", subject.password)
+      expect(user).to eq subject
+    end
+    it "logs in and email is not case sensitive" do
+      subject.save!
+      user = User.authenticate_with_credentials("HELLO@EMAIL.COM", subject.password)
+      expect(user).to eq subject
+    end
   end
 end
