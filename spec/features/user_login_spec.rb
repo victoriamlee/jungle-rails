@@ -18,11 +18,13 @@ RSpec.feature "UserLogins", type: :feature, js: true do
       expect(page).to have_content 'Password:'
       save_screenshot 'test-4-login_page1.png'
   
-      fill_in ':email', with: 'hello@email.com'
-      # execute_script 'hello@email.com'
-      # first('.btn-primary').click
-      # sleep(1)
+      fill_in 'email', with: 'hello@email.com'
+      fill_in 'password', with: '123'
+      sleep(1)
       save_screenshot 'test-4-login_page2.png'
+      click_on ".submit-button"
+      sleep(1)
+      save_screenshot 'test-4-login_page3.png'
       # expect(page).to_not have_content 'My Cart (0)'
       # expect(page).to have_content 'My Cart (1)'
     end
