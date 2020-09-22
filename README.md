@@ -8,16 +8,17 @@ Jungle is a shopping site where users can purchase items using a stripe payments
 ## Screenshots
 
 ### Home Page
-!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+!["Screenshot of homepage"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/home-page.png)
 
 ### Apparel Category
-!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+!["Screenshot of apparel category"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/apparel-category.png)
 
 ### Cart
-!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+!["Screenshot of empty cart"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/empty-cart.png)
+!["Screenshot of cart"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/cart.png)
 
 ### Order Details
-!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+!["Screenshot of order details"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/order-details.png)
 
 ## Setup
 
