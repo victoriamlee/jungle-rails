@@ -22,7 +22,7 @@ RSpec.feature "UserLogins", type: :feature, js: true do
       fill_in 'password', with: '123'
       sleep(1)
       save_screenshot 'test-4-login_page2.png'
-      click_on ".submit-button"
+      click_button "Login"
       sleep(1)
       save_screenshot 'test-4-login_page3.png'
       # expect(page).to_not have_content 'My Cart (0)'
