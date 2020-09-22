@@ -2,6 +2,22 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Functionality
+Jungle is a shopping site where users can purchase items using a stripe payments system. Users do not need to be logged in to shop!
+
+## Screenshots
+
+### Home Page
+!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+
+### Apparel Category
+!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+
+### Cart
+!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
+
+### Order Details
+!["Screenshot of homepage"](https://github.com/victoriamlee/scheduler/blob/master/docs/home-page.png)
 
 ## Setup
 
