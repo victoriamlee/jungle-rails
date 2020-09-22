@@ -14,7 +14,9 @@ Jungle is a shopping site where users can purchase items using a stripe payments
 !["Screenshot of apparel category"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/apparel-category.png)
 
 ### Cart
+Empty cart
 !["Screenshot of empty cart"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/empty-cart.png)
+Cart with items
 !["Screenshot of cart"](https://github.com/victoriamlee/jungle-rails/blob/master/docs/cart.png)
 
 ### Order Details
