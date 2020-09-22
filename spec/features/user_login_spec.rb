@@ -25,7 +25,7 @@ RSpec.feature "UserLogins", type: :feature, js: true do
       click_button "Login"
       sleep(1)
       save_screenshot 'test-4-login_page3.png'
-      # expect(page).to_not have_content 'My Cart (0)'
-      # expect(page).to have_content 'My Cart (1)'
+      expect(page).to have_content 'Signed in as Victoria!'
+      expect(page).to have_content 'Logout'
     end
 end
